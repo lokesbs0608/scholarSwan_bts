@@ -4,8 +4,7 @@
   #section1-program {
     height: 50vh;
     width: 100%;
-    margin-top: 15vh;
-    background: url('../../Images/program_bg.jpg') no-repeat;
+    background: url("../../Images/program_bg.jpg") no-repeat;
     background-size: cover;
 
     h1 {
@@ -74,26 +73,26 @@
 
     div {
       width: 90%;
-    //   .handpoint {
-    //     position: relative;
-    //     &::before {
-    //       position: absolute;
-    //       content: url(../../Images/hand_tap.png);
-    //     //   background-color: red;
-    //       height: 100%;
-    //       width: 3%;
-    //       top: -3px;
-    //       bottom: 10px;
-    //       left: 151px;
-    //     }
-    //   }
+      //   .handpoint {
+      //     position: relative;
+      //     &::before {
+      //       position: absolute;
+      //       content: url(../../Images/hand_tap.png);
+      //     //   background-color: red;
+      //       height: 100%;
+      //       width: 3%;
+      //       top: -3px;
+      //       bottom: 10px;
+      //       left: 151px;
+      //     }
+      //   }
       .hand {
         font-size: 1.6vw;
         color: #bb00ea;
         position: absolute;
         left: 9.5vw;
       }
-      .hand_tap{
+      .hand_tap {
         padding-right: 10px;
       }
       p {
@@ -204,14 +203,14 @@
     }
   }
 }
-.program-bg{
+.program-bg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 376px) and (max-width: 414px) {
-  .program-main #section2-program .left1 img{
+  .program-main #section2-program .left1 img {
     width: 341px;
     top: 125vw;
     left: 4%;
@@ -222,7 +221,7 @@
   }
 }
 @media (max-width: 412px) and (max-width: 414px) {
-  .program-main #section2-program .left1 img{
+  .program-main #section2-program .left1 img {
     width: 341px;
     top: 125vw;
     left: 4%;
@@ -232,4 +231,3 @@
     margin-left: 0;
   }
 }
-
