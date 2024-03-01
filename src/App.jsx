@@ -6,11 +6,13 @@ import SecondaryNav from "./components/SecondaryNav";
 import Navbar from "./components/Navbar";
 import SocialBanner from "./components/SocialBanner";
 import Footer from "./components/Footer";
-import Routers from './routes'
+import Routers from "./routes";
 function App() {
   return (
     <>
-      <SecondaryNav />
+      <div>
+        <SecondaryNav />
+      </div>
       <Navbar />
       <SocialBanner />
       <Routers />

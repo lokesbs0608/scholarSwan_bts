@@ -3,9 +3,19 @@ import "./Program.scss";
 import bgImg from "./INFOGRAPHY.png";
 import hand_tap from "../../Images/hand_tap.png";
 import MeetingImage from "../../Images/program-left.png.png";
-
+import { useEffect } from "react";
 
 const Program = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+
+
+
+    useEffect(() => {
+      scrollToTop();
+    }, []);
   return (
     <div className="program-main">
       <div id="section1-program">

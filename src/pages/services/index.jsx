@@ -1,10 +1,20 @@
 import React from "react";
 import "./services.scss";
 import { NavLink } from "react-router-dom";
-
+import { useEffect } from "react";
 import HoverImageNavLink from "../../components/CustomHoverButton";
 
 const Services = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+
+
+
+    useEffect(() => {
+      scrollToTop();
+    }, []);
   return (
     <>
       <div className="service-main">

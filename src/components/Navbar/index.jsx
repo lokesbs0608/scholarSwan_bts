@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import bgImg from "../Navbar/bg-img.png";
 import { MdSegment } from "react-icons/md";
 import logo from "../../Images/logo.png";
+import MobileBoard from "../../Images/mobile-board.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -42,29 +43,24 @@ const Navbar = () => {
               );
             })}
           </div>
-
-          <div className="menu">
-            <NavLink to="#">
-              <MdSegment
-                onClick={() => setShowMenu(!showMenu)}
-                className="icon-menu"
-              />
-            </NavLink>
-          </div>
         </div>
       </div>
-      {/* <a href='/tutor' >
-        <img className="mobile-board" src="/mobile-board.png" alt="" />
-      </a> */}
       <NavLink
         activeClassName="menu_active"
         exact
         className="nav_link links__-a"
         to="/tutor"
       >
-        <img className="mobile-board" src="/mobile-board.png" alt="" />
+        <img className="mobile-board" src={MobileBoard} alt="" />
       </NavLink>
-      <div className="side-menu"></div>
+      <div className="menu ">
+        <NavLink to="#">
+          <MdSegment
+            onClick={() => setShowMenu(!showMenu)}
+            className="icon-menu"
+          />
+        </NavLink>
+      </div>
     </div>
   );
 };

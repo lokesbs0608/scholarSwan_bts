@@ -1,100 +1,95 @@
 .header {
-    height: 2.5vw;
-    width: 100%;
-    background-color: #E3A511;
-    position: fixed;
-    top: 0vh;
-    z-index: 999;
+  width: 100%;
+  background-color: #e3a511;
 }
 
 .left {
-    height: 100%;
-    width: 50%;
-    /*   background-color: antiquewhite; */
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-right: 50px;
+  height: 100%;
+  width: 50%;
+  /*   background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 50px;
 }
 
 h6 {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
 }
 
 .icon {
-    color: #fff;
-    font-size: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .msg {
-    font-size: 2rem;
-    padding-top: 5px;
+  font-size: 2rem;
+  padding-top: 5px;
 }
 
 .vr {
-color: #fff;
-font-size: 1rem;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .right {
+  .frame {
+    position: absolute;
+    width: 250px;
+    top: 0vw;
+    left: 78vw;
+    z-index: 999;
+    // animation: frame 0.69s infinite alternate-reverse both;
+    animation: frame 3s ease infinite;
+  }
 
-
-    .frame {
-        position: absolute;
-        width: 250px;
-        top: 0vw;
-        left: 78vw;
-        z-index: 999;
-        // animation: frame 0.69s infinite alternate-reverse both;
-        animation: frame 3s ease infinite;     }
-
-    @keyframes frame {
-        0% {
-            transform: translate(0px, 0px) rotate(0deg);
-        }
-        50% {
-            transform: translate(30px, 0px) rotate(-20deg);
-        }
+  @keyframes frame {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
     }
-
-
+    50% {
+      transform: translate(30px, 0px) rotate(-20deg);
+    }
+  }
 }
 
-
 @media (max-width: 1080px) {
-    .header {
-        height: 2rem;
-        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
-    }
+  .header {
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
 
-    .left {
-        display: none;
-    }
+  .left {
+    display: none;
+  }
 
+  .right {
+    display: none;
+  }
 
-    .right {
-        display: none;
-    }
-
-    .frame {
-        display: none;
-    }
+  .frame {
+    display: none;
+  }
 }
 
 @media (max-width: 998px) {
-    .header {
-        height: 3rem;
-        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
-    }
+  .header {
+    height: 3rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+  .icon {
+    font-size: 1rem;
+  }
 
-    .left {
-        display: none;
-    }
+  h6 {
+    font-size: 0.7rem;
+  }
+  .left {
+    display: none;
+  }
 
-
-    .right {
-        display: none;
-    }
+  .right {
+    display: none;
+  }
 }
