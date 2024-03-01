@@ -22,7 +22,7 @@ const ContactUs = () => {
                 eiusmod tempor.
               </p>
             </div>
-            <img src={image} alt="contact_image" className="img-fluid" />
+            <img src={image} alt="contact_image" className="" />
           </div>
         </section>
         <section className="contact-section p-20">

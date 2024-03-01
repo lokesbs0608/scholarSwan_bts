@@ -3,18 +3,49 @@ import "./services.scss";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import HoverImageNavLink from "../../components/CustomHoverButton";
+import ServiceImage from "../../Images/service_mobile_BG2.png";
+import OnlineFirstImage from "../../Images/onlineFirst.png";
+import OnlineTuitionPng from "../../Images/onlineTution.png";
+import HomeTution from "../../Images/homeTution.png";
+import RightHomeImage from  "../../Images/right-home.png";
+import onLineRightImage from '../../Images/onlineright.png'
+import RightOnlineImage from '../../Images/right-online.png'
 
 const Services = () => {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
 
 
-
-
-    useEffect(() => {
-      scrollToTop();
-    }, []);
+  const serviceObj = [
+    {
+      id: 0,
+      title: "Online 3D live classes",
+      description: `Our 3D Live Classes leverage advanced 3D technology, which creates a captivating learning environment that brings any subject to life.`,
+      path: "/online-3d-live-classes",
+      color: "#ff95bcf3",
+      bg_image: OnlineFirstImage,
+      right_image:onLineRightImage,
+    },
+    {
+      id: 1,
+      title: "Online tuitions",
+      description: ` Enjoy the flexibility of scheduling and engaging 3D
+      animated classes, all of which are recorded for your ease.`,
+      path: '/online-tution',
+      color: "#8bc2de",
+      bg_image: OnlineTuitionPng,
+      right_image:RightHomeImage,
+    },
+    {
+      id: 2,
+      title: "Home tuitions",
+      description: `We take immense pride in being a premier educational
+      service provider of personalized home tuition and
+      individual coaching services.`,
+      path: "",
+      color: "#ffdb59",
+      bg_image: HomeTution,
+      right_image:RightOnlineImage
+    },
+  ];
   return (
     <>
       <div className="service-main">
@@ -22,83 +53,39 @@ const Services = () => {
           <div class="service">
             <h1>Services</h1>
           </div>
-          <img class="service_image" src="/services.png" alt="" />
+          <img class="service_image" src={ServiceImage} alt="" />
         </div>
-        <img src="/service_mobile_BG2.svg" class=" mobile-image" alt="" />
+        <img src={ServiceImage} class=" mobile-image" alt="" />
 
-        <div id="section2-service">
+        <div id="section2-service" className="px-4 mx-4">
           <div id="swiper-program">
             <div className="swiper-container-program">
-              <div className="swiper-program">
-                <img src="/onlineFirst.png" alt="" />
-                <div className="over">
-                  <div className="left">
-                    <h4>Online 3D live classes</h4>
-                    <p>
-                      Our 3D Live Classes leverage advanced 3D technology, which
-                      creates a captivating learning environment that brings any
-                      subject to life.
-                    </p>
-                    <HoverImageNavLink
-                      to={"/online-3d-live-classes"}
-                      activeClassName="menu_active"
-                      className="button"
-                    >
-                      Know More
-                    </HoverImageNavLink>
-                  </div>
-                  <div className="right">
-                    <img src="/onlineright.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-program">
-                <img src="/onlineTution.png" alt="" />
-                <div className="over">
-                  <div className="left">
-                    <h4>Online tuitions</h4>
-                    <p>
-                      Enjoy the flexibility of scheduling and engaging 3D
-                      animated classes, all of which are recorded for your ease.
-                    </p>
-
-                    <HoverImageNavLink
-                      to={"/online-tution"}
-                      activeClassName="menu_active"
-                      className="button"
-                    >
-                      Know More
-                    </HoverImageNavLink>
-                  </div>
-                  <div className="right">
-                    <img src="/right-home.png" alt="" />
+              {serviceObj.map((item)=>{
+                return(
+                  <div style={{background:item?.color,backgroundImage:item?.bg_image,}} className="swiper-program">
+                  <img src={item?.bg_image} alt="services" />
+                  <div className="over">
+                    <div className="left">
+                      <h4>{item?.title}</h4>
+                      <p>
+                       {item?.description}
+                      </p>
+                      <HoverImageNavLink
+                        to={"/online-3d-live-classes"}
+                        activeClassName="menu_active"
+                        className="button"
+                      >
+                        Know More
+                      </HoverImageNavLink>
+                    </div>
+                    <div className="right">
+                      <img src={item?.right_image} alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="swiper-program">
-                <img src="/homeTution.png" alt="" />
-                <div className="over">
-                  <div className="left">
-                    <h4>Home tuitions</h4>
-                    <p>
-                      We take immense pride in being a premier educational
-                      service provider of personalized home tuition and
-                      individual coaching services.
-                    </p>
-
-                    <HoverImageNavLink
-                      to={"/home-tution"}
-                      activeClassName="menu_active"
-                      className="button"
-                    >
-                      Know More
-                    </HoverImageNavLink>
-                  </div>
-                  <div className="right">
-                    <img src="/right-online.png" alt="" />
-                  </div>
-                </div>
-              </div>
+                )
+              })}
+           
             </div>
             <div className="mobile-service-cards">
               <div class="row">
