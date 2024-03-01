@@ -33,7 +33,7 @@ const WhyScholarSwanSection = () => {
         <HoverImageNavLink
           to={"/online-tution"}
           activeClassName="menu_active"
-          className="button"
+          className="hover_arrow_btn"
           sameColor={true}
         >
           Read More
@@ -41,7 +41,7 @@ const WhyScholarSwanSection = () => {
       </div>
 
       <img
-        className="Floating_books img-fluid w-100"
+        className="Floating_books "
         id="books"
         src={Floating_books}
         alt="arrow"

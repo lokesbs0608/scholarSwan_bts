@@ -10,97 +10,10 @@
   gap: 1.5vw;
   z-index: 99;
 
-  .icon {
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    width: 25px;
-    border-radius: 50%;
-    // background-color: #fff;
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .google {
-    position: relative;
-    // border: 1px solid #DADADA;
-    a {
-      position: absolute;
-      left: 0.4vw;
-
-      //   img{
-      //     width: 1.5vw;
-      //   }
-    }
-  }
-
-  .facebook {
-    position: relative;
-    // overflow: hidden;
-    a {
-      position: absolute;
-      left: 0.4vw;
-
-      // img{
-      //     width: 2.28vw;
-      // }
-    }
-  }
-
-  .youtube {
-    position: relative;
-    // overflow: hidden;
-    a {
-      position: absolute;
-      left: 0.4vw;
-
-      // img{
-      //     width: 2.28vw;
-      // }
-    }
-  }
-
-  .insta {
-    position: relative;
-    // border: 1px solid #DADADA;
-
-    a {
-      position: absolute;
-      left: 0.4vw;
-
-      // img{
-      //     width: 1.3vw;
-      // }
-    }
-  }
-
-  .twitter {
-    position: relative;
-    // overflow: hidden;
-    a {
-      position: absolute;
-      left: 0.4vw;
-
-      // img{
-      //     width: 2.3vw;
-      // }
-    }
-  }
-  .play-store {
-    position: relative;
-    // border: 1px solid #DADADA;
-    a {
-      position: absolute;
-      left: 0.4vw;
-      // img{
-      //     width: 1.3vw;
-      // }
-    }
   }
 
   @media (max-width: 768px) {
@@ -109,24 +22,24 @@
     }
   }
 
-  @media (min-width: 1400px) and (max-width: 1919px){
+  @media (min-width: 1400px) and (max-width: 1919px) {
     gap: 1.5vw;
-    img{
+    img {
       height: 35px;
     }
 
-    .icon{
+    .icon {
       width: 50%;
     }
   }
 
-  @media (min-width: 1920px) and (max-width: 2560px){
+  @media (min-width: 1920px) and (max-width: 2560px) {
     gap: 2.5vw;
-    img{
+    img {
       height: 50px;
     }
 
-    .icon{
+    .icon {
       width: 50%;
     }
   }

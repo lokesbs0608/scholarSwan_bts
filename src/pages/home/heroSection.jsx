@@ -12,7 +12,7 @@ const HeroSection = () => {
               src={text_bg}
               alt="arrow"
             />
-            <h1 className="left-h1">
+            <h1 className="title">
               An investment in <span>knowledge</span> pays the best interest.
             </h1>
           </div>
