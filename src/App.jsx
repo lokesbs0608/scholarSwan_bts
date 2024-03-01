@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import SocialBanner from "./components/SocialBanner";
 import Footer from "./components/Footer";
 import Routers from "./routes";
+
 function App() {
   return (
     <>

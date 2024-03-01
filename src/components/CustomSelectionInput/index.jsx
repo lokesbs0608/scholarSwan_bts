@@ -9,7 +9,7 @@ const CustomSelectionInput = ({
 }) => {
   console.log();
   return (
-    <div>
+    <div className="m-2">
       <select style={{ width: "100%" }} placeHolder={placeHolder} name={name}>
         {options.map((item, index) => {
           return <option key={index}>{item}</option>;
