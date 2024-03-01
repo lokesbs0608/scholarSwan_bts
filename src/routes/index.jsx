@@ -6,6 +6,9 @@ import Services from "../pages/services";
 import About from "../pages/about";
 import ContactUs from "../pages/Contactus";
 import FAQ from "../pages/faq";
+import Online3DClassService from "../pages/services/online3dClases";
+import OnlineTutionClassService from "../pages/services/onlineTution";
+import HomeTutionService from "../pages/services/homeTution";
 
 const Routers = () => {
   return (
@@ -13,7 +16,13 @@ const Routers = () => {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/program" Component={Program} />
-        <Route path="/services" Component={Services} />
+        <Route path="/services" Component={Services}/>
+        <Route
+          path="/online-3d-live-classes"
+          Component={Online3DClassService}
+        />
+        <Route path="/online-tution" Component={OnlineTutionClassService} />
+        <Route path="/home-tution" Component={HomeTutionService} />
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={ContactUs} />
         <Route path="/faq" Component={FAQ} />

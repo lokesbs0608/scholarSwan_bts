@@ -17,7 +17,7 @@ const Services = () => {
   const serviceObj = [
     {
       id: 0,
-      title: "Online 3D live classes",
+      title: "Online 3d live classes",
       description: `Our 3D Live Classes leverage advanced 3D technology, which creates a captivating learning environment that brings any subject to life.`,
       path: "/online-3d-live-classes",
       color: "#ff95bcf3",
@@ -26,7 +26,7 @@ const Services = () => {
     },
     {
       id: 1,
-      title: "Online tuitions",
+      title: "/Online tuitions",
       description: ` Enjoy the flexibility of scheduling and engaging 3D
       animated classes, all of which are recorded for your ease.`,
       path: '/online-tution',
@@ -40,7 +40,7 @@ const Services = () => {
       description: `We take immense pride in being a premier educational
       service provider of personalized home tuition and
       individual coaching services.`,
-      path: "",
+      path: "/home-tution",
       color: "#ffdb59",
       bg_image: HomeTution,
       right_image:RightOnlineImage
@@ -62,7 +62,7 @@ const Services = () => {
             <div className="swiper-container-program">
               {serviceObj.map((item)=>{
                 return(
-                  <div style={{background:item?.color,backgroundImage:item?.bg_image,}} className="swiper-program">
+                  <div key={item?.id} style={{background:item?.color,backgroundImage:item?.bg_image,}} className="swiper-program">
                   <img src={item?.bg_image} alt="services" />
                   <div className="over">
                     <div className="left">
@@ -71,7 +71,7 @@ const Services = () => {
                        {item?.description}
                       </p>
                       <HoverImageNavLink
-                        to={"/online-3d-live-classes"}
+                        to={item?.path}
                         activeClassName="menu_active"
                         className="button"
                       >

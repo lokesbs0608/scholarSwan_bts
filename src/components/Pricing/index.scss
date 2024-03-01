@@ -1,0 +1,236 @@
+.pricing {
+    margin-top: 122px;
+    background: radial-gradient(131.84% 221.98% at 105.78% -29.39%, #bb00ea 0%, #9e00c6 50.52%, #70008c 100%);
+
+    @media (min-width: 320px) and (max-width: 575px) {
+        margin-top: 50px;
+    }
+
+    .p-20 {
+        padding: 20px;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            padding: 10px;
+        }
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            width: 95%;
+        }
+    }
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            flex-direction: column;
+        }
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .pricing-header {
+        margin: auto;
+        display: block;
+
+        h2 {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 78px;
+            text-align: center;
+            color: #fff;
+
+            @media (min-width: 320px) and (max-width: 575px) {
+                font-size: 25px;
+                line-height: 33px;
+            }
+        }
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    .pricing-section {
+        padding-bottom: 80px;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            padding-bottom: 40px;
+        }
+
+        .pricing-swiper {
+            padding: 30px;
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                background-size: 20px !important;
+                color: transparent;
+                padding: 20px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.152);
+            }
+            .swiper-button-prev {
+                background: url("../../Images/slider_left.png") no-repeat center center #fff;
+            }
+            .swiper-button-next {
+                background: url("../../Images/slider_right.png") no-repeat center center #fff;
+            }
+        }
+
+        .pricing-card {
+            color: #fff;
+            width: 250px;
+            
+            @media (min-width: 320px) and (max-width: 575px) {
+                margin: auto;
+            }
+
+            .card_header {
+                border-bottom: 1px solid #fff;
+                margin-bottom: 30px;
+
+                .heading {
+                    padding: 10px;
+                    background: #fff;
+                    width: 68%;
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 5px;
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-align: left;
+                        margin: 0;
+                        color: #363636;
+                    }
+                }
+            }
+
+            .card-body {
+                width: 260px;
+                height: 330px;
+
+                background:
+                    linear-gradient(334.14deg, rgba(163, 255, 188, 0.71) -18.24%, #ffffff 81.3%),
+                    url("../../Images/pricing_bg.jpg") no-repeat;
+                background-size: cover;
+                background-position: center center;
+                flex-direction: column;
+
+                column-gap: 20px;
+                padding: 20px 15px;
+                border-radius: 8px;
+
+                .card-body-top {
+                    column-gap: 20px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 100%;
+
+                    @media (min-width: 320px) and (max-width: 575px) {
+                        flex-direction: row;
+                    }
+
+                    .section {
+                        h4 {
+                            margin: 0;
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            text-align: left;
+                            color: #363636;
+                        }
+                    }
+
+                    .section-circle {
+                        border-radius: 50%;
+                        background: var(--bg);
+                        padding: 8px;
+                        height: 33px;
+                        width: 48px;
+
+                        img {
+                            height: 33px;
+                            width: 36px;
+                            margin: auto;
+                            display: block;
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                .card-body-bottom {
+                    flex-direction: column;
+                    width: 100%;
+
+                    .section {
+                        width: 80%;
+                        h3 {
+                            font-size: 36px;
+                            font-weight: 700;
+                            line-height: 18px;
+                            text-align: left;
+                            color: #363636;
+
+                            span {
+                                font-size: 24px;
+                            }
+                        }
+
+                        .card-button {
+                            outline: none;
+                            border: none;
+                            background: #fff;
+                            padding: 10px;
+                            margin: auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            column-gap: 20px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 28px;
+                            text-align: left;
+                            border-radius: 25px;
+                            box-shadow: 0px 12px 15px 0px #0000000f;
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: #363636;
+
+                            .btn-icon {
+                                height: 28px;
+                                width: 28px;
+                                background: url("../../Images/WhatsApp.svg") no-repeat;
+                                background-size: 100%;
+                                background-position: center;
+                            }
+                        }
+
+                        .card-button:hover {
+                            background: linear-gradient(90.25deg, #bb00ea 0.19%, #680082 98.63%);
+                            color: #fff;
+
+                            .btn-icon {
+                                background: url("../../Images/WhatsApp_hover.svg") no-repeat;
+                                background-size: 100%;
+                                background-position: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
