@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <div className="footer_main">
-      <div className="footer__">
+      <div className="footer__ container">
         <div className="top">
           <div className="contact">
             <div className="w-50">
@@ -53,14 +53,14 @@ const Footer = () => {
               <Link to="/">Home</Link> |
               <Link to="/about">About us</Link> | 
               <Link to="/program">Programs</Link> |
-              <Link to="/services">Services</Link> |
+              <Link to="/services">Services</Link>{  '  '}
               <Link to="/">Pricing</Link> |
-              <br />
+              
               <Link to="/">Products</Link> |
               <Link to="/contact">Contact us</Link> |
               <Link to="/">Admin login</Link>
             </div>
-            <div className="quick-msg">
+            <div className="quick-msg mt-4 pt-4">
               <h6> <IoCallOutline className="quick-icon" /> <Link to="tel:+91 12345 6789">+91 12345 6789</Link> / <Link to="tel:+91 98765 43210">+91 98765 43210</Link></h6>
             </div>
           </div>
@@ -93,7 +93,9 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="bottom">
+
+      </div>
+      <div className="bottom px-4">
           <div className="bottom-container">
             <Link to="">Disclaimer</Link> | <Link to="">Privacy policy</Link> | <Link to="">Terms & conditions</Link> | <Link to="">Sitemap</Link>
           </div>
@@ -101,7 +103,6 @@ const Footer = () => {
             <h6>© {currentYear}, Scholar Swan. All rights reserved.</h6>
           </div>
         </div>
-      </div>
     </div>
   );
 };
