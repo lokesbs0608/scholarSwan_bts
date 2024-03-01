@@ -677,7 +677,7 @@
 
   #section4 {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background: url("../../Images/know-why-we-are-best.png") no-repeat;
     background-size: cover;
@@ -733,18 +733,17 @@
     // top: -5vw;
     // left: 0;
     z-index: 2;
-    // position: absolute;
-    font-family: gilroy;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Montserrat" !important;
   }
 
   #pg4-content h2 {
     font-size: 3vw;
     font-weight: 300;
     font-family: "Montserrat";
-    // font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     color: #363636;
   }
 
@@ -806,6 +805,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
   #pg4-content #swiper-pg4 .member {
@@ -819,15 +819,16 @@
     justify-content: space-between;
     overflow: hidden;
     color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
   #pg4-content #swiper-pg4 .member p {
-    line-height: 25px;
+    line-height: 1.7rem;
     color: rgba(0, 0, 0, 0.76);
-    /* padding: 1vw; */
-    font-size: 15px;
-    padding: 0 1vw;
-    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
   #pg4-content #swiper-pg4 .member p span i {

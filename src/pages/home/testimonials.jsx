@@ -5,10 +5,11 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import '../../App.scss'
 
 const Testimonials = () => {
   return (
-    <div id="section4">
+    <div id="section4" className='pt-4 py-4'>
     <div id="pg4-content">
       <h2>
         What Our Students <span>Have To Say</span>
@@ -52,7 +53,7 @@ const Testimonials = () => {
             <SwiperSlide>
               <div id="swiper-pg4">
                 <div className="member">
-                  <p>
+                  <p className=''>
                     <span>
                       <svg
                         width="60"
@@ -67,6 +68,7 @@ const Testimonials = () => {
                         />
                       </svg>
                     </span>
+                    
                     Lorem ipsum dolor sit amet consectetur, adipisicing
                     elit. Deserunt fugit laboriosam labore tenetur hic
                     commodi nihil inventore. Harum doloremque error eveniet
