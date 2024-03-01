@@ -7,13 +7,12 @@ import ServiceImage from "../../Images/service_mobile_BG2.png";
 import OnlineFirstImage from "../../Images/onlineFirst.png";
 import OnlineTuitionPng from "../../Images/onlineTution.png";
 import HomeTution from "../../Images/homeTution.png";
-import RightHomeImage from  "../../Images/right-home.png";
-import onLineRightImage from '../../Images/onlineright.png'
-import RightOnlineImage from '../../Images/right-online.png'
+import RightHomeImage from "../../Images/right-home.png";
+import onLineRightImage from "../../Images/onlineright.png";
+import RightOnlineImage from "../../Images/right-online.png";
+import MobileArrowImage from '../../Images/mobile-arrow.png'
 
 const Services = () => {
-
-
   const serviceObj = [
     {
       id: 0,
@@ -22,17 +21,17 @@ const Services = () => {
       path: "/online-3d-live-classes",
       color: "#ff95bcf3",
       bg_image: OnlineFirstImage,
-      right_image:onLineRightImage,
+      right_image: onLineRightImage,
     },
     {
       id: 1,
       title: "/Online tuitions",
       description: ` Enjoy the flexibility of scheduling and engaging 3D
       animated classes, all of which are recorded for your ease.`,
-      path: '/online-tution',
+      path: "/online-tution",
       color: "#8bc2de",
       bg_image: OnlineTuitionPng,
-      right_image:RightHomeImage,
+      right_image: RightHomeImage,
     },
     {
       id: 2,
@@ -43,7 +42,7 @@ const Services = () => {
       path: "/home-tution",
       color: "#ffdb59",
       bg_image: HomeTution,
-      right_image:RightOnlineImage
+      right_image: RightOnlineImage,
     },
   ];
   return (
@@ -57,125 +56,75 @@ const Services = () => {
         </div>
         <img src={ServiceImage} class=" mobile-image" alt="" />
 
-        <div id="section2-service" className="px-4 mx-4">
+        <div
+          id="section2-service"
+          className="px-4 mx-4 d-sm-none d-md-none d-lg-block"
+        >
           <div id="swiper-program">
             <div className="swiper-container-program">
-              {serviceObj.map((item)=>{
-                return(
-                  <div key={item?.id} style={{background:item?.color,backgroundImage:item?.bg_image,}} className="swiper-program">
-                  <img src={item?.bg_image} alt="services" />
-                  <div className="over">
-                    <div className="left">
-                      <h4>{item?.title}</h4>
-                      <p>
-                       {item?.description}
-                      </p>
-                      <HoverImageNavLink
-                        to={item?.path}
-                        activeClassName="menu_active"
-                        className="button"
-                      >
-                        Know More
-                      </HoverImageNavLink>
-                    </div>
-                    <div className="right">
-                      <img src={item?.right_image} alt="" />
+              {serviceObj.map((item) => {
+                return (
+                  <div
+                    key={item?.id}
+                    style={{
+                      background: item?.color,
+                      backgroundImage: item?.bg_image,
+                    }}
+                    className="swiper-program"
+                  >
+                    <img src={item?.bg_image} alt="services" />
+                    <div className="over">
+                      <div className="left">
+                        <h4>{item?.title}</h4>
+                        <p>{item?.description}</p>
+                        <HoverImageNavLink
+                          to={item?.path}
+                          activeClassName="menu_active"
+                          className="button"
+                        >
+                          Know More
+                        </HoverImageNavLink>
+                      </div>
+                      <div className="right">
+                        <img src={item?.right_image} alt="" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                )
+                );
               })}
-           
-            </div>
-            <div className="mobile-service-cards">
-              <div class="row">
-                <div class="column">
-                  <div class="card card_service1">
-                    <div className="inner-div">
-                      <div className="left-side">
-                        <h1 className="text-mobile-inner-div1">
-                          Online 3D Live Classes
-                        </h1>
-                        <p className="text-mobile-inner-div2">
-                          Our 3D Live Classes leverage advanced 3D technology,
-                          which creates a captivating learning environment that
-                          brings any subject to life.
-                        </p>
-                        <button className="text-mobile-inner-div-btn">
-                          <NavLink to="/online-3d-live-classes">
-                            Know more <img src="/mobile-arrow.png" />
-                          </NavLink>
-                        </button>
-                        {/* <NavLink
-                      className="button text-mobile-inner-div-btn"
-                      activeClassName="menu_active"
-                      to="/online-3d"
-                    >
-                      Know More <img src="/mobile-arrow.png"/>
-                      </NavLink> */}
-                      </div>
-                      <div className="right-side">
-                        <img src="/mobile-first-div.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="card card_service2">
-                    <div className="inner-div">
-                      <div className="left-side">
-                        <h1 className="text-mobile-inner-div1">
-                          Online tuitions
-                        </h1>
-                        <p className="text-mobile-inner-div2">
-                          We take immense pride in being a premier educational
-                          service provider of personalized home tuition and
-                          individual coaching services.
-                        </p>
-                        <button className="text-mobile-inner-div-btn button">
-                          <NavLink to="/online-tution">
-                            Know more <img src="/mobile-arrow.png" />
-                          </NavLink>
-                        </button>
-                      </div>
-                      <div className="right-side">
-                        <img src="/mobile-second-div.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="card card_service3">
-                    <div className="inner-div">
-                      <div className="left-side">
-                        <h1 className="text-mobile-inner-div1">
-                          Home tuitions
-                        </h1>
-                        <p className="text-mobile-inner-div2">
-                          We take immense pride in being a premier educational
-                          service provider of personalized home tuition and
-                          individual coaching services.
-                        </p>
-                        <button className="text-mobile-inner-div-btn">
-                          <NavLink to="/home-tution">
-                            Know more <img src="/mobile-arrow.png" />
-                          </NavLink>
-                        </button>
-                      </div>
-                      <div className="right-side">
-                        <img src="/mobile-third-div.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
 
-        <div id="section3-service">
+        
+      
+        </div>
+        <div class="row align-items-center justify-content-center d-sm-block d-md-none d-lg-none">
+              {serviceObj.map((item) => {
+                return (
+                    <div style={{backgroundImage:item?.bg_image,backgroundColor:item?.color}} className="d-flex align-items-center p-2 col-12">
+                      <div className="left-side">
+                        <h1 className="text-mobile-inner-div1">
+                          {item?.title}
+                        </h1>
+                        <p className="text-mobile-inner-div2">
+                          {item?.description}
+                        </p>
+                        <button className="text-mobile-inner-div-btn">
+                          <NavLink to={item?.path}>
+                            Know more <img src={MobileArrowImage} />
+                          </NavLink>
+                        </button>
+                      </div>
+                      <div className="img fluid w-100">
+                        <img src={item?.right_image} alt="" />
+                      </div>
+                    </div>
+              
+                );
+              })}
+            </div>
+
+        <div className="container py-2">
           <h1>ONLINE 3D LIVE CLASSES</h1>
           <p>
             Explore the world of interactive online live classes with 3D

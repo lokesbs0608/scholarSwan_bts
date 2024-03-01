@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const SecondaryNav = () => {
   return (
-    <div className="header  d-flex  align-items-center justify-content-center py-2">
+    <div className="header d-sm-none d-md-none d-lg-block">
       <div className="d-flex  align-items-center justify-content-center ">
         <div className="d-flex  text-center justify-content-center">
           <IoIosMail className=" icon " />
