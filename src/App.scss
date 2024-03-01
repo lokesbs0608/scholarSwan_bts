@@ -145,3 +145,17 @@ textarea {
     #082137 154.95%
   );
 }
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px)) !important;
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%) ;
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff00) ;border: 2px solid #ffff;
+
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
+}
+
+.swiper-pagination-bullet {
+  --swiper-theme-color: #ffa603 !important;
+}
