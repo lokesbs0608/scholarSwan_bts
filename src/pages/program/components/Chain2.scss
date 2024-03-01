@@ -1,0 +1,115 @@
+#chain_position {
+    background: pink;
+    .think_img img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        height: auto;
+    }
+    .chain_data {
+        position: absolute;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .all_content {
+        margin-top: 3%;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    @media screen and (max-width: 320px) {
+        .all_content {
+            margin-top: 10px;
+            gap: 20px;
+        }
+    }
+    @media screen and (min-width: 321px) and (max-width: 379px) {
+        .all_content {
+            margin-top: 12px;
+            gap: 24px;
+        }
+    }
+    @media screen and (min-width: 380px) and (max-width: 420px) {
+        .all_content {
+            margin-top: 15px;
+            gap: 25px;
+        }
+    }
+    @media screen and (min-width: 421px) and (max-width: 767px) {
+        .all_content {
+            margin-top: 25px;
+            gap: 57px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .all_content {
+            margin-top: 25px;
+            gap: 60px;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+        .all_content {
+            margin-top: 50px;
+            gap: 166px;
+        }
+    }
+    @media (min-width: 1440px) {
+        .all_content {
+            margin-top: 45px;
+            gap: 121px;
+        }
+    }
+    .chain_values {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .chain_numberArea {
+        text-align: end;
+        flex: 1;
+        .chain_number {
+            width: 50%;
+            color: white;
+            font-size: 7vw;
+            font-weight: 400;
+        }
+        .chain_number1 {
+            width: 80%;
+            color: white;
+            font-size: 7vw;
+            font-weight: 400;
+        }
+    }
+    .chain_labelArea {
+        display: flex;
+        justify-content: end;
+        flex: 1;
+        .chain_label_end {
+            width: 70%;
+            font-size: 1.5vw;
+            text-align: end;
+        }
+        .chain_label {
+            font-size: 1.5vw;
+            width: 70%;
+        }
+    }
+    .chain_labelArea1 {
+        display: flex;
+        flex: 1;
+        .chain_label {
+            font-size: 1.5vw;
+            width: 70%;
+        }
+    }
+    .long_chain img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: auto;
+    }
+}
