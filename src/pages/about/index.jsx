@@ -119,11 +119,9 @@ const About = () => {
           </div>
         </div>
         <div className="container">
-          <div className="row py-4 my-4 flex-sm-column-reverse">
-            <div className="col-sm-12 col-lg-5 order-md-2">
-              <img className="img-fluid w-100" src={round_logo} alt="Round Logo" />
-            </div>
-            <div className="col-sm-12 col-lg-7 order-md-1 " >
+          <div className="d-flex p-1 flex-sm-row-reverse flex-row flex-wrap align-items-center  ">
+          
+            <div className="col-sm-12 col-lg-6 p-3 mx-3" >
               <h2 style={{ fontSize: "2rem", fontWeight: "400" }}>
                 About{" "}
                 <span style={{ fontWeight: "700" }} className="bold">
@@ -155,9 +153,12 @@ const About = () => {
                 only with confidence but also to excel in them.
               </p>
             </div>
+            <div className="col-sm-12 col-lg-5 pl-4 pr-4">
+              <img className="img-fluid w-100" src={round_logo} alt="Round Logo" />
+            </div>
           </div>
 
-          <div className="section_para">
+          <div className=" p-4">
             <p className="paragraph">
               Though our primary goal is to prepare the students for JEE and
               NEET, we understand every student has diverse interests and
@@ -184,8 +185,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="container my-4 py-4">
-          <div className="row align-items-start">
+        <div className="container my-4 p-3 py-4">
+          <div className="row p-3 align-items-start">
             {BulletPointsObj.map((item) => {
               return (
                 <div className="col-sm-12 col-lg-4">
@@ -261,14 +262,14 @@ const About = () => {
           </div>
         <div className="section_5">
        
-          <div className="row align-items-center">
+          <div className="d-flex  flex-row flex-wrap align-items-center">
             <div className=" col-sm-12 col-lg-5">
-              <img className="jyothi_img" src={jyothi_img} />
+              <img className="img-fluid w-100" src={jyothi_img} />
             </div>
-            <div className=" col-sm-12 col-lg-7">
+            <div className=" col-sm-12 col-lg-7 p-3   pr-4">
               <h4 className="founder_name">JYOTHI R </h4>
               <p className="profile">DIRECTOR , CO FOUNDER</p>
-              <p className="paragraph">
+              <p className="">
                 I taught by choice but soon found my passion for teaching. I
                 realized this through my experiences in various educational
                 programs. My academic background is a Master of Science degree
@@ -277,7 +278,7 @@ const About = () => {
                 at Scholar SWAN, I hold multifaceted roles and responsibilities.
                 My role spans across some key areas of the organization.
               </p>
-              <p className="paragraph">
+              <p className="">
                 In Scholar Swan I am responsible for student academic
                 performance management, tutor training, quality assurance
                 content management and academic innovations in guiding product,
@@ -286,9 +287,12 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="section_6">
-          <div   style={{textAlign:'right'}} className="row align-items-center" >
-            <div className="col-7 col-lg-7 col-sm-12">
+        <div className="section_6 ">
+          <div className="d-flex p-1 flex-sm-row-reverse flex-row flex-wrap align-items-center  " >
+          <div className="col-sm-12 p-1 col-lg-5">
+              <img className="img-fluid w-100" src={chandra_img} />
+            </div>
+            <div className="col-sm-12 p-3 pl-4 col-lg-7  text-start text-lg-end">
               <h4 className="founder_name">CHANDRA SHEKARA K V </h4>
               <p className="profile">CO FOUNDER</p>
               <p className="">
@@ -300,7 +304,7 @@ const About = () => {
                 of mentoring hundreds of students. Through teaching, I am able
                 to inspire them. This is the joy I derive from teaching .
               </p>
-              <p className="paragraph">
+              <p className="">
                 In Scholar SWAN, I am responsible for the strategic planning,
                 marketing, branding, and financial initiatives. In this role, I
                 am able to apply my unique skills and experiences. I am able to
@@ -311,9 +315,8 @@ const About = () => {
                 the lives of students academic en-devours.
               </p>
             </div>
-            <div className="col-4 col-lg-5 col-12">
-              <img className="chandra_img" src={chandra_img} />
-            </div>
+
+       
           </div>
         </div>
         </div>
