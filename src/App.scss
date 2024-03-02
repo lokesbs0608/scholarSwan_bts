@@ -60,13 +60,13 @@ body {
 }
 
 input {
-  padding: 8px 15px;
+  padding: 8px 10px;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   width: 100% !important;
-  margin: 0.6rem;
+
   border: 2px solid #bcbcbc;
   font-family: Montserrat;
 
@@ -94,12 +94,11 @@ input:active {
 }
 
 select {
-  padding: 8px 15px;
+  padding: 8px 10px;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
   line-height: 20px;
-  margin: 0.6rem;
   border: 2px solid #bcbcbc;
   -webkit-appearance: none;
   -moz-appearance: none;

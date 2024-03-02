@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.scss";
 import CustomInput from "../CustomInput";
-import CustomSelectionInput from '../CustomSelectionInput'
+import CustomSelectionInput from "../CustomSelectionInput";
 const EnquiryForm = (props) => {
   return (
-    <div  className="rounded">
+    <div className="rounded">
       <div className="enquiry-form  ">
         <div className="container">
           <div className="form-header">
@@ -12,50 +12,62 @@ const EnquiryForm = (props) => {
           </div>
           <div className="input-container">
             <form>
-              <div className="p-1">
-                <CustomInput placeHolder={"Student Name"}/>
+              <div className="px-1">
+                <CustomInput placeHolder={"Student Name"} />
               </div>
-              <div className="p-1">
+              <div className="px-1">
                 <CustomInput placeHolder={"Parent's Name"} />
               </div>
 
               <div className="row p-0 m-0">
-              <div  className="col-sm-12 col-lg-6 m-0 p-1" >
-                <CustomSelectionInput options={['BE','YES']} placeHolder={'Choose Grade'} />
+                <div className="col-sm-12 col-lg-6 m-0 px-1">
+                  <CustomSelectionInput
+                    options={["BE", "YES"]}
+                    placeHolder={"Choose Grade"}
+                  />
+                </div>
+                <div className="col-sm-12 col-lg-6 m-0 px-1">
+                  <CustomSelectionInput
+                    options={["A", "B"]}
+                    placeHolder={"Choose Subject"}
+                  />
+                </div>
               </div>
-              <div  className="col-sm-12 col-lg-6 m-0 p-1">
-                <CustomSelectionInput options={['A','B']} placeHolder={'Choose Subject'} />
-              </div>
-              </div>
-         
-              <div className="m-0 p-1">
-                <CustomSelectionInput options={['STATE','Central']} placeHolder={'Choose curriculum'} />
+
+              <div className="m-0 px-1">
+                <CustomSelectionInput
+                  options={["STATE", "Central"]}
+                  placeHolder={"Choose curriculum"}
+                />
               </div>
 
               <div className="row p-0 m-0">
-              <div className="col-3 m-0 p-1">
-                <CustomSelectionInput options={['+91','+2']} placeHolder={'Choose curriculum'} />
-              </div>
-              <div className="col-9 m-0 p-1">
-                <CustomInput  placeHolder={'Mobile Number'} type={'number'} />
-              </div>
-              </div>
-        
-              <div>
-                <CustomInput  placeHolder={'Email Id'} type={'email'} />
+                <div className="col-sm-4 col-3  m-0 px-1">
+                  <CustomSelectionInput
+                    options={["+91", "+2"]}
+                    placeHolder={"Choose curriculum"}
+                  />
+                </div>
+                <div className="col-sm-8 col-9  m-0 px-1">
+                  <CustomInput placeHolder={"Mobile Number"} type={"number"} />
+                </div>
               </div>
 
-              <div className="row p-0">
-              <div className="col-6 m-0 p-1">
-                <CustomInput  placeHolder={'City'}  />
+              <div className="m-0 px-1">
+                <CustomInput placeHolder={"Email Id"} type={"email"} />
               </div>
-              <div className="col-6 m-0 p-1">
-                <CustomInput  placeHolder={'Pincode'} type={'number'}  />
+
+              <div className="row m-0 p-0">
+                <div className="col-6 m-0 px-1">
+                  <CustomInput placeHolder={"City"} />
+                </div>
+                <div className="col-6 m-0 px-1">
+                  <CustomInput placeHolder={"Pincode"} type={"number"} />
+                </div>
               </div>
-              </div>
-           
+
               <div className="m-2">
-                <textarea placeholder="Address" ></textarea>
+                <textarea placeholder="Address"></textarea>
               </div>
             </form>
 
