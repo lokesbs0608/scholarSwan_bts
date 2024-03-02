@@ -109,22 +109,21 @@ const About = () => {
     <>
       <div className="about_page">
         <div className="section_1">
-          <div className="main_heading">
+          <div className="main_heading text-center">
             <h3 class="header_title">
               About <span>Us</span>
             </h3>
-            <p className="header_para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+            <p className="header_para text-center">
+              Lorem ipsum dolor sit amet, consectetur 
             </p>
           </div>
         </div>
         <div className="container">
-          <div className="row py-4 my-4">
-            <div className="col-sm-12 col-lg-5">
+          <div className="row py-4 my-4 flex-sm-column-reverse">
+            <div className="col-sm-12 col-lg-5 order-md-2">
               <img className="img-fluid w-100" src={round_logo} alt="Round Logo" />
             </div>
-            <div className="col-sm-12 col-lg-7">
+            <div className="col-sm-12 col-lg-7 order-md-1 " >
               <h2 style={{ fontSize: "2rem", fontWeight: "400" }}>
                 About{" "}
                 <span style={{ fontWeight: "700" }} className="bold">

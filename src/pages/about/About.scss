@@ -1,12 +1,14 @@
 .about_page {
   .section_1 {
     background: url(../../Images/about_us_bg.jpg) no-repeat;
-    background-size: cover;
+    background-size:contain;
     height: 50vh;
+    width: 100%;
+    background-position: right;
     position: relative;
     @media (min-width: 320px) and (max-width: 575px) {
-      background: url(../../Images/about_us_bg.jpg) no-repeat;
-      background-size: cover;
+      background: url(../../Images/contactus_bg_mob.png) no-repeat;
+      background-size: contain;
       height: 37vh;
       position: relative;
     }
@@ -21,19 +23,18 @@
       flex-direction: column;
       text-align: center;
       @media (min-width: 320px) and (max-width: 575px) {
-        left: 0px;
-        top: 10%;
+    
       }
 
       .header_title {
         font-family: Montserrat;
-        font-size: 56px;
+        font-size: 3rem;
         font-weight: 400;
         line-height: 78px;
         color: #363636;
         margin: 0;
         @media (min-width: 320px) and (max-width: 575px) {
-          font-size: 30px;
+          font-size: 2rem;
         }
         span {
           font-family: Montserrat;
