@@ -24,9 +24,11 @@ const Footer = () => {
 
   return (
     <div className="footer_main">
-      <div className="footer__ container">
-        <div className="top">
-          <div className="contact">
+      <div className="footer__  py-4">
+        <div className="row gap-3 m-4 py-4">
+
+
+          <div className="contact col-sm-12 col-lg-3">
             <div className="w-50">
             <h2 className="yellow_line">Contact</h2>
             </div>
@@ -47,14 +49,16 @@ const Footer = () => {
               </h6>
             </div>
           </div>
-          <div className="quick-links">
+
+
+          <div className="quick-links col-sm-12 col-lg-5">
             <h2 className="line1">Quick Links</h2>
             <div className="different-links">
               <Link to="/">Home</Link> |
               <Link to="/about">About us</Link> | 
               <Link to="/program">Programs</Link> |
-              <Link to="/services">Services</Link>{  '  '}
-              <Link to="/">Pricing</Link> |
+              <Link to="/services">Services</Link>|
+              <Link to="/">Pricing</Link>  { " "}
               
               <Link to="/">Products</Link> |
               <Link to="/contact">Contact us</Link> |
@@ -64,7 +68,9 @@ const Footer = () => {
               <h6> <IoCallOutline className="quick-icon" /> <Link to="tel:+91 12345 6789">+91 12345 6789</Link> / <Link to="tel:+91 98765 43210">+91 98765 43210</Link></h6>
             </div>
           </div>
-          <div className="social-links">
+
+
+          <div className="social-links col-sm-12 col-lg-3">
             <h2 className="line2">Social Links</h2>
             <div className="social-apps">
               <div className="apps">
@@ -87,19 +93,20 @@ const Footer = () => {
             <h2 className="line3">Download App</h2>
 
             <img
-              className="apps"
+              className="img-fluid  w-100"
               src={google_play}
               alt="arrow"
             />
           </div>
+
         </div>
 
       </div>
-      <div className="bottom px-4">
-          <div className="bottom-container">
+      <div className="bottom">
+          <div className="d-flex flex-wrap justify-content-center align-items-center   d-none  d-md-flex d-lg-flex">
             <Link to="">Disclaimer</Link> | <Link to="">Privacy policy</Link> | <Link to="">Terms & conditions</Link> | <Link to="">Sitemap</Link>
           </div>
-          <div id="right">
+          <div >
             <h6>© {currentYear}, Scholar Swan. All rights reserved.</h6>
           </div>
         </div>
