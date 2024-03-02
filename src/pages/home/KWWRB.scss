@@ -1,0 +1,47 @@
+.mob_div {
+  background-image: url("./Images/kwwrb_bg.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.gradient_bg {
+  background-image: url("./Images/kwwrb_Gradients.png");
+  background-size: cover;
+  height: 100vh;
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #fff;
+  strong {
+    font-weight: bold;
+  }
+}
+
+
+.steps_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.mob_steps {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #082137;
+  border-radius: 50%;
+}
+.step_number {
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: transparent;
+
+  -webkit-text-stroke: 1px #fefefebd;
+}
