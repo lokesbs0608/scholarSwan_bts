@@ -48,14 +48,14 @@ const Testimonials = () => {
             },
           }}
           modules={[Navigation, Autoplay]}
-          style={{maxWidth:'1400px',margin:'0 auto'}}
+          style={{maxWidth:'1500px',margin:'0 auto'}}
         >
           {[1, 2, 3, 4, 5, 6, 7].map((items) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide style={{width:'450px'}}>
                 <div className="gap-2 " id="swiper-pg4">
-                  <div className="card_container d-sm-none d-md-none d-lg-block py-3 mx-4">
-                    <div className="card_header_">
+                  <div className="card_container d-sm-none d-md-none d-lg-block py-3  mx-2">
+                    <div className="card_header_ p-3">
                       <p className="">
                         <span>
                           <svg
