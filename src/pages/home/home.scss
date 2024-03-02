@@ -1,12 +1,22 @@
 .main_home_page {
-
-
+  .testimonial_cards {
+    min-width: 27vw;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0000002b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
 
   .text_ {
     width: 100%;
     position: relative;
     margin-top: 1.5vw;
-   
 
     p {
       color: #363636;
@@ -55,7 +65,7 @@
     }
     .form-button {
       position: absolute;
-      left:-1%;
+      left: -1%;
       top: 40%;
       rotate: 90deg;
       padding: 5px 14px;
@@ -170,7 +180,7 @@
 
   #section2 {
     position: relative;
-  height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -265,7 +275,6 @@
     h1 span {
       font-weight: 700;
     }
-
 
     .read-more-content {
       color: black;
@@ -655,7 +664,7 @@
 
   #section4 {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background: url("../../Images/know-why-we-are-best.png") no-repeat;
     background-size: cover;
@@ -789,8 +798,7 @@
   }
 
   #pg4-content #swiper-pg4 .member {
-    width: 27vw;
-    height: auto;
+    min-width: 25vw;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px #0000002b;
@@ -905,162 +913,143 @@
         }
       }
     }
+  }
 
-    .section5-container {
-      width: 88%;
-      margin: auto;
-      padding: 30px;
+  .card-container {
+    padding: 1.4vw;
+    margin: auto;
+
+    @media (min-width: 320px) and (max-width: 575px) {
+      padding: 4.4vw;
+    }
+
+    img {
+      height: 150px;
 
       @media (min-width: 320px) and (max-width: 575px) {
-        width: 100%;
-        padding: 30px 0 0 0;
-      }
-
-      .section5-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        row-gap: 30px;
-
-        @media (min-width: 320px) and (max-width: 575px) {
-          grid-template-columns: repeat(1, 1fr);
-        }
-      }
-
-      .card-container {
-        padding: 1.4vw;
-        margin: auto;
-
-        @media (min-width: 320px) and (max-width: 575px) {
-          padding: 4.4vw;
-        }
-
-        img {
-          height: 150px;
-
-          @media (min-width: 320px) and (max-width: 575px) {
-            height: 100px;
-          }
-        }
-      }
-
-      .card-grey {
-        background: #c5c5c5 !important;
-        padding: 0;
-      }
-
-      .card-teal {
-        background: #51c5c9 !important;
-        padding: 0;
-      }
-
-      .card-maroon {
-        background: #800563 !important;
-        padding: 0;
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        padding: 1.4vw;
-        background: url("../../Images/card-overlay.png") no-repeat center center
-          #fff;
-        background-size: 150px;
-
-        @media (min-width: 320px) and (max-width: 575px) {
-          gap: 18px;
-          padding: 15px;
-          margin: auto;
-        }
-
-        .card_header {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          column-gap: 20px;
-
-          img {
-            width: 5vw;
-
-            @media (min-width: 320px) and (max-width: 575px) {
-              width: 50px;
-            }
-          }
-
-          h5 {
-            font-size: 21px;
-            color: #363636;
-            font-weight: 700;
-            margin: 0;
-
-            @media (min-width: 320px) and (max-width: 575px) {
-              font-size: 20px;
-              text-align: left;
-            }
-          }
-        }
-
-        .card-body {
-          p {
-            margin-top: 1.5vw;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.5;
-            color: #363636cc;
-            margin-bottom: 0;
-
-            @media (min-width: 320px) and (max-width: 575px) {
-              font-size: 14px;
-            }
-          }
-        }
-
-        .card_footer {
-          margin-top: auto;
-
-          a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-            background-color: #082137;
-            padding: 1vw 0vw;
-            border-radius: 50px;
-            transition: all ease 0.5s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1vw;
-            line-height: 1;
-
-            @media (min-width: 320px) and (max-width: 575px) {
-              font-size: 13px;
-              padding: 4vw 0vw;
-
-              img {
-                height: 14px;
-              }
-            }
-          }
-
-          a:hover {
-            background: linear-gradient(
-              105.67deg,
-              #082137 -1.94%,
-              #9747ff -1.92%,
-              #082137 154.95%
-            );
-          }
-        }
+        height: 100px;
       }
     }
   }
 
+  .card-grey {
+    background: #c5c5c5 !important;
+    padding: 0;
+  }
+
+  .card-teal {
+    background: #51c5c9 !important;
+    padding: 0;
+  }
+
+  .card-maroon {
+    background: #800563 !important;
+    padding: 0;
+  }
+
+  .card_ {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    min-height: 21.5rem;
+    min-width: 30rem;
+    padding: 1rem 1.3rem;
+    background: url("../../Images/card-overlay.png") no-repeat center center
+      #fff;
+    background-size: 150px;
+    margin: 15px;
+
+    @media (min-width: 320px) and (max-width: 575px) {
+      min-width: 10rem;
+      width: 100%;
+      min-height: 15rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0.7rem;
+    }
+
+    .card_header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 20px;
+
+      img {
+        width: 5vw;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+          width: 50px;
+        }
+      }
+
+      h5 {
+        font-size: 21px;
+        color: #363636;
+        font-weight: 700;
+        margin: 0;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+          font-size: 20px;
+          text-align: left;
+        }
+      }
+    }
+
+    .card-body {
+      p {
+        margin-top: 1.5vw;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #363636cc;
+        margin-bottom: 0;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .card_footer {
+      margin-top: auto;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #082137;
+        padding: 1vw 0vw;
+        border-radius: 50px;
+        transition: all ease 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        line-height: 1;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+          font-size: 13px;
+          padding: 4vw 0vw;
+
+          img {
+            height: 14px;
+          }
+        }
+      }
+
+      a:hover {
+        background: linear-gradient(
+          105.67deg,
+          #082137 -1.94%,
+          #9747ff -1.92%,
+          #082137 154.95%
+        );
+      }
+    }
+  }
   #section5 {
-    overflow: hidden;
-    position: relative;
-    height: 113vh;
     width: 100%;
     background-image: url(https://s3-alpha-sig.figma.com/img/1529/70a6/d0bb94e002013e857f2439e2ccba0b88?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BIP-YNxXn81DM5oZFefHHIp7h1yhTq14Pwe6Bdv2n~2bHoU1NhrcH9Nggsml~kM1DjuGUXFQMQNN~dDXQCXountl2tnKHHW6rKFNPNj3BIExoZ40WjOEVJHBx3bYac8QxuMnLTMUh7N8XGP0KLI5lUprWYI1IGzmFU2NeOI-nVIMZztxx12952fCTpMDaIXcVLrPPEJFox5OfLan0Ujo423OOH5nsON7kY-y5iWd3oiaDfbIqMjsjyg11-tOxSNAo8C3wXgflQPOS6vujRx8lWbTVt1tGzB~SQeY2xSPW1YsgFpJXeOGjPCqJhEDgvgx6Vx1gd737d~OhhspD1O~Mw__);
     background-size: cover;
@@ -1501,7 +1490,7 @@
     #section2 {
       flex-direction: column;
       margin-bottom: 40%;
-  height: 120vh;
+      height: 120vh;
       width: auto;
 
       .elem-pg2 {
@@ -1520,8 +1509,8 @@
 
       #books {
         height: 30vw;
-    right: -24%;
-    bottom: -2%;
+        right: -24%;
+        bottom: -2%;
       }
 
       h1 {
@@ -1659,7 +1648,7 @@
     // }
 
     #section4 {
-      height: 70vh;
+      height: 50vh;
     }
 
     #circle1-p4 {
@@ -1720,7 +1709,7 @@
 
     #pg4-content #swiper-pg4 .member {
       flex-shrink: 0;
-      width: 85vw;
+      width: 100%;
       height: auto;
       margin-right: 3vw;
       margin-top: -15vw;
@@ -1992,13 +1981,13 @@
 
       #books {
         height: 60vw;
-    right: -24%;
-    bottom: -2%;
+        right: -24%;
+        bottom: -2%;
       }
     }
 
     #section4 {
-      height: 100vh;
+      height: 70vh;
 
       .swiper {
         height: 38%;

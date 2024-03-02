@@ -10,7 +10,7 @@ import '../../App.scss'
 const Testimonials = () => {
   return (
     <div id="section4" className='pt-4 py-4'>
-    <div id="pg4-content">
+    <div className=" " id="pg4-content">
       <h2>
         What Our Students <span>Have To Say</span>
       </h2>
@@ -51,8 +51,8 @@ const Testimonials = () => {
         {[1, 2, 3, 4, 5, 6, 7].map((items) => {
           return (
             <SwiperSlide>
-              <div id="swiper-pg4">
-                <div className="member">
+              <div className="gap-2" id="swiper-pg4">
+                <div className="member ">
                   <p className=''>
                     <span>
                       <svg
@@ -93,6 +93,7 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
+      
               </div>
             </SwiperSlide>
           );

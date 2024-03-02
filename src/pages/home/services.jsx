@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import live_class from "../../Images/live_class.png";
 import yoga_img from "../../Images/yoga_img.png";
@@ -11,15 +11,13 @@ import arrow_white from "../../Images/arrow_white.png";
 
 const Services = () => {
   return (
-   
     <div className="section5">
-    <div className="section5-header">
-      <h2>Services</h2>
-    </div>
+      <div className="section5-header">
+        <h2>Services</h2>
+      </div>
 
-    <div className="section5-container">
-      <div className="section5-grid">
-        <div class="card">
+      <div className="row my-4 py-4  justify-content-center">
+        <div className="card_ col-sm-12 col-md-3">
           <div class="card_header">
             <img className="" src={live_class} alt="arrow" />
 
@@ -27,8 +25,8 @@ const Services = () => {
           </div>
           <div className="card-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.
             </p>
           </div>
           <div className="card_footer">
@@ -39,7 +37,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div class="card">
+        <div className="card_ col-sm-12 col-md-3">
           <div class="card_header">
             <img className="" src={yoga_img} alt="arrow" />
 
@@ -47,8 +45,8 @@ const Services = () => {
           </div>
           <div className="card-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
             </p>
           </div>
           <div className="card_footer">
@@ -59,7 +57,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div class="card">
+        <div className="card_ col-sm-12 col-md-3">
           <div class="card_header">
             <img className="" src={home_laptop} alt="arrow" />
 
@@ -67,8 +65,7 @@ const Services = () => {
           </div>
           <div className="card-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
             </p>
           </div>
           <div className="card_footer">
@@ -79,25 +76,25 @@ const Services = () => {
           </div>
         </div>
 
-        <div class="card card-grey">
+        <div className="card_ card-grey col-sm-12 col-md-3">
           <div className="card-container">
             <img src={service_1} alt="service_1" />
           </div>
         </div>
-        <div class="card card-teal">
+        <div className="card_ card-teal col-sm-12 col-md-3">
           <div className="card-container">
             <img src={service_2} alt="service_2" />
           </div>
         </div>
-        <div class="card card-maroon">
+
+        <div className="card_ card-maroon col-sm-12 col-md-3">
           <div className="card-container">
             <img src={service_3} alt="service_3" />
           </div>
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

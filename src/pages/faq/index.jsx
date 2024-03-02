@@ -78,7 +78,7 @@ export default function Faq() {
       <div className="faq-main ">
         {FaqObj.map((item, index) => {
           return (
-            <div id="section1-faq" className="section-faq">
+            <div id="section1-faq" className="section-faq w-100 mb-4">
               <h1>{item?.title}</h1>
               <div className="wrapper">
                 <div className="accordion">
@@ -95,10 +95,10 @@ export default function Faq() {
                       </div>
                       <div
                         className={classNames("contents", {
-                          showContent: selected === i,
+                          showContent: selected === item?.title,
                         })}
                       >
-                        <p> {item.content}</p>
+                    <p> {item.content}</p>
                       </div>
                     </div>
                   ))}
