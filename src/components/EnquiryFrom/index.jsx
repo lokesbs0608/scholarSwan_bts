@@ -4,8 +4,8 @@ import CustomInput from "../CustomInput";
 import CustomSelectionInput from '../CustomSelectionInput'
 const EnquiryForm = (props) => {
   return (
-    <div>
-      <div className="enquiry-form">
+    <div  className="rounded">
+      <div className="enquiry-form  ">
         <div className="container">
           <div className="form-header">
             <h2 dangerouslySetInnerHTML={{ __html: props.heading }} />

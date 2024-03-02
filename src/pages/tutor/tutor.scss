@@ -1,0 +1,62 @@
+.tutor-main {
+  width: 100%;
+
+  #section1-tutor {
+    position: relative;
+    height: 48vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(92.88deg, #6bc7ab 0%, #34add3 100%);
+
+    img {
+      position: absolute;
+  bottom: 0%;
+      right: 0;
+      width: 100%;
+      object-fit: cover;
+      z-index: 9;
+    }
+    .tutor {
+      height: 100%;
+      width: 63%;
+      z-index: 9;
+
+      h1 {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  #section2-tutor {
+    height: 43vh;
+    width: 100%;
+    position: relative;
+
+    .form {
+      position: absolute;
+      background-color: #fff;
+      top: 55%;
+      border-radius: 10px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.circle_bg {
+  background-image: url("../../Images/tutor_bg\ \(2\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}

@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       id: 1,
-      title: "/Online tuitions",
+      title: "Online tuitions",
       description: ` Enjoy the flexibility of scheduling and engaging 3D
       animated classes, all of which are recorded for your ease.`,
       path: "/online-tution",

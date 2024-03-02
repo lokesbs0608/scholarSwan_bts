@@ -9,6 +9,7 @@ import FAQ from "../pages/faq";
 import Online3DClassService from "../pages/services/online3dClases";
 import OnlineTutionClassService from "../pages/services/onlineTution";
 import HomeTutionService from "../pages/services/homeTution";
+import Tutor from "../pages/tutor";
 
 const Routers = () => {
   return (
@@ -26,6 +27,7 @@ const Routers = () => {
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={ContactUs} />
         <Route path="/faq" Component={FAQ} />
+        <Route path="/tutor" Component={Tutor} />
       </Routes>
     </div>
   );

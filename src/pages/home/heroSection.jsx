@@ -1,6 +1,7 @@
 import React from 'react';
 import text_bg from "../../Images/text_bg.png";
 import hero_section from "../../Images/hero_section.png";
+import EnquiryForm from '../../components/EnquiryFrom'
 
 const HeroSection = () => {
   return (
@@ -20,7 +21,7 @@ const HeroSection = () => {
             <img className="girl-boy" src={hero_section} alt="girl-boy" />
           </div>
           <div className="form">
-            {/* <Form heading="Signup for free<br/><b>scholarSWAN innoclasses</b>" /> */}
+            <EnquiryForm heading="Signup for free<br/><b>scholarSWAN innoclasses</b>"/>
           </div>
         </div>
       </div>

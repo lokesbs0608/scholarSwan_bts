@@ -11,9 +11,7 @@ import Routers from "./routes";
 function App() {
   return (
     <>
-
-        <SecondaryNav />
-    
+      <SecondaryNav />
       <Navbar />
       <SocialBanner />
       <Routers />

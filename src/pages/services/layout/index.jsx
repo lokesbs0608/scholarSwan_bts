@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.scss'
 // import Form from '../../Form/Form'
 import Pricing from '../../../components/Pricing'
-// import Enquiry from '../../Form/Enquiry'
+import Enquiry from '../../../components/EnquiryFrom'
 
 const Service = ({ main_heading, backgroundImage, text_color, image, content1, sub_heading, content2, sub_section }) => {
 
@@ -27,7 +27,7 @@ const Service = ({ main_heading, backgroundImage, text_color, image, content1, s
                             <div className="text-container" dangerouslySetInnerHTML={{ __html: content1 }} />
                         </div>
                         <div className="section">
-                            {/* <Enquiry heading="<b>Enquiry</b> Form" /> */}
+                            <Enquiry heading="<b>Enquiry</b> Form" />
                         </div>
                     </div>
                 </section>
