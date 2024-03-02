@@ -18,7 +18,7 @@ const SocialBanner = () => {
   ];
 
   return (
-    <div className="social-media-main">
+    <div className="social-media-main d-none  d-md-flex d-lg-flex">
       {SocialObj.map((item) => {
         return (
           <div>

@@ -4,11 +4,12 @@
 
   .section1 {
     position: relative;
+    background: url("../../Images/hero_bg_web.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 95vh;
     width: 100%;
-
     overflow: hidden;
-    background: url("../../Images/hero_bg.png") no-repeat;
 
     .title_ {
       letter-spacing: 0.2px;
@@ -19,6 +20,30 @@
       width: 33%;
       font-weight: 600;
       color: #082137;
+    }
+    .mob_form {
+      width: 80%;
+      height: 100%;
+      position: relative;
+      left: 20%;
+      box-shadow: 0px 13px 54px 0px rgba(0, 0, 0, 0.07);
+    }
+    .form-button {
+      position: absolute;
+      left:-1%;
+      top: 40%;
+      rotate: 90deg;
+      padding: 5px 14px;
+      color: #fff;
+      background-color: #bb00ea;
+      z-index: 2;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      font-weight: 600;
+      img {
+        rotate: 90deg;
+        width: 20px;
+      }
     }
 
     .title_ span {
@@ -47,13 +72,8 @@
     .form {
       position: absolute;
       right: 10vw;
-      // top: 2.5vw;
-      /*   height: 30vw; */
       width: 26vw;
-      // margin-top: 3rem;
       margin-top: 2rem;
-      /*   box-shadow: 0px 4px 4px 0px #00000040; */
-
       .form-main .form-container .content h1 {
         font-size: 1.6vw;
       }
@@ -194,15 +214,19 @@
       0% {
         transform: translate(0px, 0px);
       }
+
       25% {
         transform: translate(-20px, 24px) rotate(-10deg);
       }
+
       50% {
         transform: translate(-30px, 36px) rotate(-15deg);
       }
+
       75% {
         transform: translate(-30px, 48px) rotate(-20deg);
       }
+
       100% {
         transform: translate(-30px, 50px) rotate(-25deg);
       }
@@ -732,6 +756,7 @@
     object-fit: cover;
     background-size: 300%;
   }
+
   #pg4-content .swiper-button-prev,
   #pg4-content .swiper-button-prev:hover {
     transition: all ease 0.5s;
@@ -740,6 +765,7 @@
       font-size: 1.3vw;
     }
   }
+
   #pg4-content .swiper-button-next {
     opacity: 1;
     background: url("../../Images/slider_right.png") no-repeat center center
@@ -1379,14 +1405,17 @@
     }
 
     .section1 {
-      height: 120vh;
+      height: 122vh;
       flex-direction: column;
+      background: url("../../Images/hero_bg_mob.png");
+      background-repeat: no-repeat;
+      background-size: contain;
 
       .text {
         position: absolute;
         height: 100%;
         width: 100%;
-        top: 5vw;
+        top: 10vw;
         left: 0%;
 
         .title_ {
@@ -1398,11 +1427,11 @@
           }
         }
 
-        .bg-img {
-          height: 21vw;
+        .bg_img {
+          height: 23vw;
           left: -2vw;
-          top: 17vw;
-          width: 55vw;
+          top: 9vw;
+          width: 53vw;
         }
       }
 
@@ -1412,7 +1441,7 @@
 
       .people {
         left: -5vw;
-        top: 45vw;
+        bottom: 0;
         height: 50%;
         width: 50%;
       }
@@ -1578,6 +1607,7 @@
 
         .card_footer {
           width: 20%;
+
           h4 {
             font-size: 12px;
             text-align: left;
@@ -1910,8 +1940,11 @@
     }
 
     .section1 {
-      height: 83vh;
+      height: 95vh;
       margin-top: 0;
+      background: url("../../Images/hero_bg_mob.png");
+      background-repeat: no-repeat;
+      background-size: contain;
 
       .girl-boy {
         // width: 330px;
@@ -1923,6 +1956,7 @@
 
       .text {
         height: auto;
+        top: 10vh;
       }
 
       .people {

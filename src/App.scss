@@ -69,6 +69,18 @@ input {
   margin: 0.6rem;
   border: 2px solid #bcbcbc;
   font-family: Montserrat;
+
+  @media (min-width: 320px) and (max-width: 575px) {
+    font-size: 0.7rem !important;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    font-size: 0.8rem !important;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 0.9rem !important;
+  }
 }
 
 input::placeholder {
@@ -84,7 +96,7 @@ input:active {
 select {
   padding: 8px 15px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 20px;
   margin: 0.6rem;
@@ -101,6 +113,22 @@ select {
   option {
     color: #bcbcbc;
   }
+
+  
+  @media (min-width: 320px) and (max-width: 575px) {
+    font-size: 0.6rem !important; 
+    background-size: 10px !important;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    font-size: 0.7rem !important;
+    background-size: 10px !important;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 0.9rem !important;
+    background-size: 10px !important;
+  }
 }
 
 textarea {
@@ -114,6 +142,17 @@ textarea {
   margin: 0.6rem;
   border: 2px solid #bcbcbc;
   font-family: Montserrat;
+  @media (min-width: 320px) and (max-width: 575px) {
+    font-size: 0.7rem !important;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    font-size: 0.8rem !important;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 0.9rem !important;
+  }
 }
 
 .hover_arrow_btn {
@@ -147,11 +186,18 @@ textarea {
 }
 
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px)) !important;
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px)) !important;
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 20px)
+  ) !important;
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 20px)
+  ) !important;
   display: inline-block;
-  border-radius: var(--swiper-pagination-bullet-border-radius, 50%) ;
-  background: var(--swiper-pagination-bullet-inactive-color, #ffffff00) ;border: 2px solid #ffff;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff00);
+  border: 2px solid #ffff;
 
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
 }

@@ -53,10 +53,6 @@
   padding: 10px 20px;
 }
 
-// .nav_link:hover{
-//   clip-path: url('../../Images/Brush.svg');
-// }
-
 .nav_link::after {
   content: "";
   position: absolute;
@@ -124,9 +120,7 @@
 .img6 {
   left: 69.5vw;
 }
-// .bg-nav-img:not(.active):hover {
-//   opacity: 1;
-// }
+
 .nav_link:not(.active):hover + .bg-nav-img {
   opacity: 1;
 }
@@ -218,24 +212,15 @@
       .nav_link.active {
         font-size: 3.1vw;
       }
-      /* display: none; */
-      /*   flex-direction: column;
-        align-items: start; */
     }
     .links_menu {
       display: none;
-
-      /*    a{
-          margin-top: 8vw;
-          margin-bottom: -10vw;
-          margin-left:20vw;
-          font-weight: 600;
-        } */
     }
   }
 
   @media (max-width: 998px) {
     .header_container {
+      padding: 20px 10px;
     }
     .links__ {
       flex-direction: column;
