@@ -10,7 +10,7 @@ import HomeTution from "../../Images/homeTution.png";
 import RightHomeImage from "../../Images/right-home.png";
 import onLineRightImage from "../../Images/onlineright.png";
 import RightOnlineImage from "../../Images/right-online.png";
-import MobileArrowImage from '../../Images/mobile-arrow.png'
+import MobileArrowImage from "../../Images/mobile-arrow.png";
 
 const Services = () => {
   const serviceObj = [
@@ -94,37 +94,47 @@ const Services = () => {
               })}
             </div>
           </div>
-
-        
-      
         </div>
-        <div class="row align-items-center justify-content-center d-sm-block d-md-none d-lg-none">
-              {serviceObj.map((item) => {
-                return (
-                    <div style={{backgroundImage:item?.bg_image,backgroundColor:item?.color}} className="d-flex align-items-center p-2 col-12">
-                      <div className="left-side">
-                        <h1 className="text-mobile-inner-div1">
-                          {item?.title}
-                        </h1>
-                        <p className="text-mobile-inner-div2">
-                          {item?.description}
-                        </p>
-                        <button className="text-mobile-inner-div-btn">
-                          <NavLink to={item?.path}>
-                            Know more <img src={MobileArrowImage} />
-                          </NavLink>
-                        </button>
-                      </div>
-                      <div className="img fluid w-100">
-                        <img src={item?.right_image} alt="" />
-                      </div>
-                    </div>
+        <div id="swiper-program" className="row p-3 gap-0 align-items-center justify-content-center d-sm-block d-md-none d-lg-none">
+          {serviceObj.map((item) => {
+            return (
+              <div
+                style={{
+                  backgroundImage: `url(${item?.bg_image})`,
+                  backgroundColor: item?.color,
+                  borderRadius: "0px",
+                  backgroundSize: "cover",
+                }}
+                className="p-3 swiper-program"
               
-                );
-              })}
-            </div>
+              >
+                <div className="row p-2 col-12  align-items-center">
+                  <div className="left-side col-4">
+                    <h1 className="text-mobile-inner-div1">{item?.title}</h1>
+                    <p className="text-mobile-inner-div2">
+                      {item?.description}
+                    </p>
+                  </div>
 
-        <div className="container py-2">
+                  <div className=" col-6 img fluid w-50">
+                    <img src={item?.right_image} alt="" />
+                  </div>
+                </div>
+                <div>
+                  <HoverImageNavLink
+                    to={item?.path}
+                    activeClassName="menu_active"
+                    className="button"
+                  >
+                    Know More
+                  </HoverImageNavLink>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="container p-3">
           <h1>ONLINE 3D LIVE CLASSES</h1>
           <p>
             Explore the world of interactive online live classes with 3D

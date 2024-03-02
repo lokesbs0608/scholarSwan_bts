@@ -1,6 +1,27 @@
 .service-main {
   width: 100%;
 
+  .button {
+    padding: 13px 13px;
+    border-radius: 50px;
+    border: none;
+    min-width: 15rem;
+    outline: none;
+    background-color: #fdfdfd;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    width: 129px;
+    gap: 10px;
+  }
+
   #section1-service {
     position: relative;
     height: 55vh;
@@ -54,9 +75,8 @@
       padding: 10rem 5rem;
       font-weight: 500;
       background-size: fill;
-      background-position: center;
       background-repeat: no-repeat;
-background-image: url("../../Images/service-main.png");
+      background-image: url("../../Images/service-main.png");
     }
     .swiper-container-program {
       position: relative;
@@ -134,23 +154,23 @@ background-image: url("../../Images/service-main.png");
     }
     .swiper-program .over .left .button {
       padding: 13px 13px;
-  border-radius: 50px;
-  border: none;
-  min-width: 15rem;
-  outline: none;
-  background-color: #fdfdfd;
-  color: #000000;
-  font-weight: 500;
-  font-size: 16px;
-  z-index: 9;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all ease 0.5s;
-  text-decoration: none;
-  width: 129px;
-  gap: 10px;
+      border-radius: 50px;
+      border: none;
+      min-width: 15rem;
+      outline: none;
+      background-color: #fdfdfd;
+      color: #000000;
+      font-weight: 500;
+      font-size: 16px;
+      z-index: 9;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all ease 0.5s;
+      text-decoration: none;
+      width: 129px;
+      gap: 10px;
     }
     .swiper-program .over .left .button:hover {
       background: linear-gradient(
@@ -277,8 +297,9 @@ background-image: url("../../Images/service-main.png");
 
       #swiper-program {
         width: 100%;
-        height: 50vh;
+
         display: block;
+        background-image: url('');
       }
       .swiper-program .over .left h4 {
         font-size: 4vw;
@@ -316,7 +337,7 @@ background-image: url("../../Images/service-main.png");
 
 @media (max-width: 600px) {
   #swiper-program {
-    height: 100vh;
+  
   }
   .swiper-container {
     align-items: center;
@@ -396,8 +417,8 @@ background-image: url("../../Images/service-main.png");
     width: -webkit-fill-available;
   }
   #section2-service {
-    height: 56vh !important;
-    margin-top: 0px !important;
+    height: 0vh !important;
+    margin-top: 10px !important;
   }
 }
 .service_image {
