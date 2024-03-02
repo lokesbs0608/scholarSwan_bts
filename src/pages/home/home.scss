@@ -1,4 +1,29 @@
 .main_home_page {
+
+
+
+  .text_ {
+    width: 100%;
+    position: relative;
+    margin-top: 1.5vw;
+   
+
+    p {
+      color: #363636;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    #blur {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3vw;
+      background: linear-gradient(transparent, #fff);
+    }
+  }
+
   width: 100%;
   overflow: hidden;
 
@@ -145,7 +170,7 @@
 
   #section2 {
     position: relative;
-    min-height: 100vh;
+  height: 100vh;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -200,8 +225,8 @@
 
     #books {
       position: absolute;
-      right: 2%;
-      bottom: 0;
+      right: -21%;
+      bottom: -5%;
       transform: translateX(12px) translateY(12px);
       height: 25vw;
       z-index: 2;
@@ -241,26 +266,6 @@
       font-weight: 700;
     }
 
-    #text2 {
-      width: 75%;
-      position: relative;
-      margin-top: 1.5vw;
-
-      p {
-        color: #363636;
-        font-weight: 500;
-        font-size: 1vw;
-        line-height: 1.7;
-      }
-
-      #blur {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 3vw;
-        background: linear-gradient(transparent, #fff);
-      }
-    }
 
     .read-more-content {
       color: black;
@@ -1496,7 +1501,7 @@
     #section2 {
       flex-direction: column;
       margin-bottom: 40%;
-      margin-top: 10vh;
+  height: 120vh;
       width: auto;
 
       .elem-pg2 {
@@ -1515,6 +1520,8 @@
 
       #books {
         height: 30vw;
+    right: -24%;
+    bottom: -2%;
       }
 
       h1 {
@@ -1972,6 +1979,7 @@
       margin-top: 0;
       padding: 0vh 10px 20px 10px;
       margin-bottom: 2%;
+      height: 120vh;
 
       .button {
         font-size: 12px;
@@ -1984,7 +1992,8 @@
 
       #books {
         height: 60vw;
-        right: -10%;
+    right: -24%;
+    bottom: -2%;
       }
     }
 
